@@ -73,7 +73,7 @@ export default function Page() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3 text-sm text-gray-300">
-              <span className="rounded-full border border-white/10 px-3 py-1">11:00 – 21:00</span>
+              <span className="rounded-full border border-white/10 px-3 py-1">周一到周日 11:00 – 21:00</span>
               <span className="rounded-full border border-white/10 px-3 py-1">厚切排餐</span>
               <span className="rounded-full border border-white/10 px-3 py-1">信義區美食</span>
               <span className="rounded-full border border-white/10 px-3 py-1">聚餐推薦</span>
@@ -178,7 +178,7 @@ export default function Page() {
                 電話：02 2765 0821
               </div>
               <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
-                營業時間：11:00 – 21:00
+                營業時間：周一到周日 11:00 – 21:00
               </div>
               <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
                 類型：台式厚切牛排館
