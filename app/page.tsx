@@ -95,7 +95,7 @@ export default function Page() {
           <div className="grid gap-4">
             <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
               <img
-                src="/steak.jpg"
+                src="\steak.jpg"
                 alt="厚切牛排示意圖"
                 className="h-[420px] w-full object-cover"
               />
