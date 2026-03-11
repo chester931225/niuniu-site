@@ -80,20 +80,39 @@ export default function Page() {
             </div>
           </div>
 
-          <div className="grid gap-4 sm:grid-cols-2">
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-              <div className="text-sm text-gray-400">店家地址</div>
-              <div className="mt-3 text-xl font-bold leading-8">台北市信義區永吉路30巷157弄12號</div>
+          <div className="grid gap-4">
+            <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80"
+                alt="厚切牛排示意圖"
+                className="h-[420px] w-full object-cover"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+              <div className="absolute bottom-0 left-0 right-0 p-6">
+                <div className="inline-flex rounded-full bg-yellow-300/15 px-3 py-1 text-xs font-medium text-yellow-200 backdrop-blur">
+                  首頁示意大圖
+                </div>
+                <p className="mt-3 max-w-md text-sm leading-7 text-gray-200">
+                  目前先使用風格示意圖片，之後你可以再換成店家真實餐點照或門面照。
+                </p>
+              </div>
             </div>
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
-              <div className="text-sm text-gray-400">聯絡電話</div>
-              <div className="mt-3 text-xl font-bold">02 2765 0821</div>
-            </div>
-            <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:col-span-2">
-              <div className="text-sm text-gray-400">適合誰來？</div>
-              <p className="mt-3 text-lg leading-8 text-gray-200">
-                很適合下班想快速吃飽的人、學生聚會，或第一次在信義區找平價排餐的客人。
-              </p>
+
+            <div className="grid gap-4 sm:grid-cols-2">
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                <div className="text-sm text-gray-400">店家地址</div>
+                <div className="mt-3 text-xl font-bold leading-8">台北市信義區永吉路30巷157弄12號</div>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
+                <div className="text-sm text-gray-400">聯絡電話</div>
+                <div className="mt-3 text-xl font-bold">02 2765 0821</div>
+              </div>
+              <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:col-span-2">
+                <div className="text-sm text-gray-400">適合誰來？</div>
+                <p className="mt-3 text-lg leading-8 text-gray-200">
+                  很適合下班想快速吃飽的人、學生聚會，或第一次在信義區找平價排餐的客人。
+                </p>
+              </div>
             </div>
           </div>
         </div>
