@@ -1,29 +1,48 @@
 export default function Page() {
-  const menuItems = [
-    {
-      name: '安格斯黑牛排',
-      desc: '厚切口感紮實，適合第一次來店的客人。',
-      price: '$445',
-      tag: '人氣招牌',
-    },
-    {
-      name: '雪花沙朗牛排',
-      desc: '經典排餐選擇，肉感與油花較均衡。',
-      price: '$320',
-      tag: '經典必點',
-    },
-    {
-      name: '黃金雞腿排',
-      desc: '外皮香酥、肉質多汁，不吃牛也很適合。',
-      price: '$280',
-      tag: '首次推薦',
-    },
-    {
-      name: '雙拼套餐',
-      desc: '一次吃到兩種主餐，份量感更足。',
-      price: '$380',
-      tag: '飽足首選',
-    },
+  const steakItems = [
+    { name: '5oz 特製牛排', price: '$230', desc: '入門份量，適合想簡單吃排餐的客人。' },
+    { name: '7oz 雪花沙朗', price: '$280', desc: '經典人氣選擇，油花與口感較均衡。' },
+    { name: '9oz 霜降沙朗', price: '$330', desc: '肉感更明顯，適合想吃得更滿足。' },
+    { name: '12oz 安格斯黑牛', price: '$380', desc: '招牌熱門品項，第一次來很適合點。' },
+    { name: '16oz 限量厚片頂級', price: '$499', desc: '厚切口感更紮實，適合大食量。' },
+    { name: '32oz 限量厚片頂級', price: '$799', desc: '超大份量，適合想挑戰份量的客人。' },
+  ]
+
+  const mixedItems = [
+    { name: '帶骨牛小排 2片', price: '$400', desc: '喜歡啃骨邊香氣的人會很愛。' },
+    { name: '7oz 菲力牛排', price: '$400', desc: '肉質較嫩，口感細緻。' },
+    { name: '里肌豬排', price: '$250', desc: '不吃牛時的經典排餐選擇。' },
+    { name: '黃金雞腿排', price: '$250', desc: '外酥內嫩，接受度很高。' },
+    { name: '茴香羊小排 2支', price: '$350', desc: '羊排香氣明顯，適合想換口味。' },
+    { name: '比目魚排', price: '$250', desc: '清爽海鮮選項。' },
+    { name: '香煎鮭魚', price: '$350', desc: '魚肉口感較厚實。' },
+    { name: '好吃魷魚排', price: '$300', desc: '海鮮控可選的特色品項。' },
+  ]
+
+  const comboItems = [
+    { name: '特選雙拼 5選2', price: '$350', desc: '牛／豬／比目魚／雞／蝦，自由搭配。' },
+    { name: '7oz 雙拼 + 選1', price: '$400', desc: '比目魚／豬／雞／蝦／羊，多一種更豐盛。' },
+    { name: '海陸空全餐', price: '$450', desc: '雞＋比目魚＋蝦／豬／牛／羊，豐盛首選。' },
+    { name: '海鮮雙拼 +1', price: '$420', desc: '比目魚／蝦／鮭魚／魷魚／干貝，海鮮愛好者推薦。' },
+  ]
+
+  const limitedItems = [
+    { name: '7oz 起司牛', price: '$280', desc: '濃郁起司搭配牛排，口味更厚重。' },
+    { name: '起司豬', price: '$260', desc: '起司風味與豬排結合，接受度高。' },
+    { name: '香煎起司雞', price: '$260', desc: '不吃牛也能享受起司系排餐。' },
+    { name: '7oz 牛排佐松露醬', price: '$280', desc: '多了松露香氣，整體更有層次。' },
+    { name: '12oz 黑松露安格斯', price: '$390', desc: '安格斯牛排搭配松露醬，質感升級。' },
+    { name: '16oz 厚切松露頂級', price: '$480', desc: '大份量＋松露風味的豪華版。' },
+  ]
+
+  const sideItems = [
+    { name: '脆炸薯條', price: '$60' },
+    { name: '雞塊', price: '$60' },
+    { name: '洋蔥圈', price: '$60' },
+    { name: '炸物拼盤', price: '$150' },
+    { name: '干貝 2顆', price: '$150' },
+    { name: '草蝦 1隻', price: '$50' },
+    { name: '花椰菜', price: '$50' },
   ]
 
   const features = [
@@ -73,7 +92,7 @@ export default function Page() {
             </div>
 
             <div className="mt-8 flex flex-wrap gap-3 text-sm text-gray-300">
-              <span className="rounded-full border border-white/10 px-3 py-1">周一到周日 11:00 – 21:00</span>
+              <span className="rounded-full border border-white/10 px-3 py-1">11:00 – 21:00</span>
               <span className="rounded-full border border-white/10 px-3 py-1">厚切排餐</span>
               <span className="rounded-full border border-white/10 px-3 py-1">信義區美食</span>
               <span className="rounded-full border border-white/10 px-3 py-1">聚餐推薦</span>
@@ -83,7 +102,7 @@ export default function Page() {
           <div className="grid gap-4">
             <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
               <img
-                src="/steak.jpg"
+                src="\steak.jpg"
                 alt="厚切牛排示意圖"
                 className="h-[420px] w-full object-cover"
               />
@@ -140,27 +159,127 @@ export default function Page() {
       <section className="border-y border-white/10 bg-white/[0.03] px-6 py-16">
         <div className="mx-auto max-w-6xl">
           <div className="mb-10 text-center">
-            <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Popular menu</p>
-            <h2 className="mt-3 text-3xl font-bold md:text-4xl">熱門推薦菜單</h2>
+            <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Full menu</p>
+            <h2 className="mt-3 text-3xl font-bold md:text-4xl">完整菜單</h2>
             <p className="mx-auto mt-4 max-w-2xl leading-8 text-gray-300">
-              先從熱門品項開始選最不容易踩雷，第一次來店也能快速決定。
+              以下依照店內菜單照片整理成網站版，讓客人比看照片更容易快速找品項與價格。
             </p>
           </div>
 
-          <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-4">
-            {menuItems.map((item) => (
-              <div
-                key={item.name}
-                className="rounded-3xl border border-white/10 bg-neutral-900 p-6 transition hover:-translate-y-1 hover:border-yellow-300/40"
-              >
-                <div className="inline-flex rounded-full bg-yellow-300/10 px-3 py-1 text-xs font-medium text-yellow-300">
-                  {item.tag}
+          <div className="space-y-12">
+            <div>
+              <div className="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white">牛排類</h3>
+                  <p className="mt-2 text-gray-400">第一次來店最推薦先從這一區開始選。</p>
                 </div>
-                <h3 className="mt-4 text-xl font-bold">{item.name}</h3>
-                <p className="mt-3 min-h-[72px] leading-7 text-gray-400">{item.desc}</p>
-                <div className="mt-6 text-2xl font-black text-yellow-300">{item.price}</div>
+                <span className="rounded-full border border-yellow-300/20 bg-yellow-300/10 px-4 py-1 text-sm text-yellow-300">
+                  熱門主餐
+                </span>
               </div>
-            ))}
+              <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {steakItems.map((item) => (
+                  <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
+                    <div className="flex items-start justify-between gap-4">
+                      <h4 className="text-lg font-bold">{item.name}</h4>
+                      <div className="text-lg font-black text-yellow-300">{item.price}</div>
+                    </div>
+                    <p className="mt-3 leading-7 text-gray-400">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white">其他排餐</h3>
+                  <p className="mt-2 text-gray-400">除了牛排之外，也有雞排、豬排與海鮮選擇。</p>
+                </div>
+                <span className="rounded-full border border-white/10 px-4 py-1 text-sm text-gray-300">
+                  多元搭配
+                </span>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {mixedItems.map((item) => (
+                  <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
+                    <div className="flex items-start justify-between gap-4">
+                      <h4 className="text-lg font-bold">{item.name}</h4>
+                      <div className="text-lg font-black text-yellow-300">{item.price}</div>
+                    </div>
+                    <p className="mt-3 leading-7 text-gray-400">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white">雙拼／套餐</h3>
+                  <p className="mt-2 text-gray-400">適合想吃更豐富、或兩個人一起參考點餐的區塊。</p>
+                </div>
+                <span className="rounded-full border border-yellow-300/20 bg-yellow-300/10 px-4 py-1 text-sm text-yellow-300">
+                  飽足推薦
+                </span>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-2">
+                {comboItems.map((item) => (
+                  <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
+                    <div className="flex items-start justify-between gap-4">
+                      <h4 className="text-lg font-bold">{item.name}</h4>
+                      <div className="text-lg font-black text-yellow-300">{item.price}</div>
+                    </div>
+                    <p className="mt-3 leading-7 text-gray-400">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white">限量版</h3>
+                  <p className="mt-2 text-gray-400">起司與松露系列，適合想吃特別一點的客人。</p>
+                </div>
+                <span className="rounded-full border border-white/10 px-4 py-1 text-sm text-gray-300">
+                  特色口味
+                </span>
+              </div>
+              <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+                {limitedItems.map((item) => (
+                  <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
+                    <div className="flex items-start justify-between gap-4">
+                      <h4 className="text-lg font-bold">{item.name}</h4>
+                      <div className="text-lg font-black text-yellow-300">{item.price}</div>
+                    </div>
+                    <p className="mt-3 leading-7 text-gray-400">{item.desc}</p>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div>
+              <div className="mb-6 flex items-center justify-between gap-4">
+                <div>
+                  <h3 className="text-2xl font-bold text-white">單點類</h3>
+                  <p className="mt-2 text-gray-400">想另外加點配料或炸物時可從這裡挑選。</p>
+                </div>
+                <span className="rounded-full border border-white/10 px-4 py-1 text-sm text-gray-300">
+                  加點選擇
+                </span>
+              </div>
+              <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+                {sideItems.map((item) => (
+                  <div key={item.name} className="rounded-2xl border border-white/10 bg-neutral-900 px-5 py-4">
+                    <div className="flex items-center justify-between gap-3">
+                      <div className="font-medium text-gray-200">{item.name}</div>
+                      <div className="font-bold text-yellow-300">{item.price}</div>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -178,7 +297,7 @@ export default function Page() {
                 電話：02 2765 0821
               </div>
               <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
-                營業時間：周一到周日 11:00 – 21:00
+                營業時間：周一到週日 11:00 – 21:00
               </div>
               <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
                 類型：台式厚切牛排館
