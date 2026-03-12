@@ -66,7 +66,7 @@ export default function Page() {
             </h1>
 
             <p className="mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              想找一間價格好入手、份量又夠的排餐店？這裡整理了店家資訊、完整菜單、交通方式與來店重點，讓客人一頁就看懂。
+              想找一間價格好入手、份量又夠的排餐店？來這裡就對了!
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
