@@ -302,37 +302,6 @@ export default function Page() {
           </div>
         </div>
       </section>
-
-      <section className="border-t border-white/10 bg-black px-6 py-16">
-        <div className="mx-auto max-w-6xl rounded-[32px] border border-white/10 bg-[linear-gradient(135deg,rgba(250,204,21,0.12),rgba(255,255,255,0.03))] p-8 md:p-10">
-          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
-            <div>
-              <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Call to action</p>
-              <h2 className="mt-3 text-3xl font-bold md:text-4xl">準備好安排下一餐了嗎？</h2>
-              <p className="mt-4 max-w-2xl leading-8 text-gray-300">
-                不管是平日晚餐、朋友聚會，還是想找一間份量夠又不會太貴的排餐店，這裡都是很容易下決定的選擇。
-              </p>
-            </div>
-            <div className="flex flex-col gap-3">
-              <a
-                href="https://maps.app.goo.gl/cfE5yWkMuCs25Cpg7"
-                target="_blank"
-                rel="noreferrer"
-                className="rounded-2xl bg-yellow-300 px-6 py-3 text-center font-semibold text-black"
-              >
-                立即導航
-              </a>
-              <a
-                href="tel:0227650821"
-                className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-semibold text-white"
-              >
-                撥打電話
-              </a>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <footer className="border-t border-white/10 bg-neutral-950 px-6 py-8 text-center text-sm text-gray-500">
         © 2026 新牛屋（牛一牛）厚切牛排・永吉店
       </footer>
