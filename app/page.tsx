@@ -59,12 +59,14 @@ export default function Page() {
             <div className="mb-5 inline-flex rounded-full border border-yellow-300/25 bg-yellow-300/10 px-4 py-1 text-sm text-yellow-200">
               信義區巷弄排餐推薦
             </div>
+
             <h1 className="text-4xl font-black leading-tight md:text-6xl">
               新牛屋（牛一牛）
               <span className="mt-2 block text-yellow-300">厚切牛排・永吉店</span>
             </h1>
+
             <p className="mt-6 max-w-xl text-lg leading-8 text-gray-300">
-              想找一間價格好入手、份量又夠的排餐店？這裡整理了店家資訊、熱門品項、位置與來店重點，讓客人一頁就看懂。
+              想找一間價格好入手、份量又夠的排餐店？這裡整理了店家資訊、完整菜單、交通方式與來店重點，讓客人一頁就看懂。
             </p>
 
             <div className="mt-8 flex flex-wrap gap-4">
@@ -76,6 +78,7 @@ export default function Page() {
               >
                 立即導航
               </a>
+
               <a
                 href="tel:0227650821"
                 className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 font-semibold text-white transition hover:bg-white/10"
@@ -95,16 +98,19 @@ export default function Page() {
           <div className="grid gap-4">
             <div className="relative overflow-hidden rounded-[32px] border border-white/10 bg-white/5 shadow-2xl shadow-black/30">
               <img
-                src="\steak.jpg"
-                alt="厚切牛排示意圖"
+                src="/steak.jpg"
+                alt="新牛屋厚切牛排"
                 className="h-[420px] w-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/10 to-transparent" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/10 to-transparent" />
+
               <div className="absolute bottom-0 left-0 right-0 p-6">
                 <div className="inline-flex rounded-full bg-yellow-300/15 px-3 py-1 text-xs font-medium text-yellow-200 backdrop-blur">
-                  5oz特製牛排
+                  5oz 特製牛排
                 </div>
-                <p className="mt-3 max-w-md text-sm leading-7 text-gray-200"></p>
+                <p className="mt-3 max-w-md text-sm leading-7 text-gray-200">
+                  鐵板現煎、香氣十足，搭配麵、蛋與醬料，是許多客人第一次來店會想試的經典排餐。
+                </p>
               </div>
             </div>
 
@@ -113,10 +119,12 @@ export default function Page() {
                 <div className="text-sm text-gray-400">店家地址</div>
                 <div className="mt-3 text-xl font-bold leading-8">台北市信義區永吉路30巷157弄12號</div>
               </div>
+
               <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur">
                 <div className="text-sm text-gray-400">聯絡電話</div>
                 <div className="mt-3 text-xl font-bold">02 2765 0821</div>
               </div>
+
               <div className="rounded-3xl border border-white/10 bg-white/5 p-6 backdrop-blur sm:col-span-2">
                 <div className="text-sm text-gray-400">適合誰來？</div>
                 <p className="mt-3 text-lg leading-8 text-gray-200">
@@ -149,6 +157,7 @@ export default function Page() {
                   熱門主餐
                 </span>
               </div>
+
               <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {steakItems.map((item) => (
                   <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
@@ -172,6 +181,7 @@ export default function Page() {
                   多元搭配
                 </span>
               </div>
+
               <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {mixedItems.map((item) => (
                   <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
@@ -195,6 +205,7 @@ export default function Page() {
                   飽足推薦
                 </span>
               </div>
+
               <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-2">
                 {comboItems.map((item) => (
                   <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
@@ -218,6 +229,7 @@ export default function Page() {
                   特色口味
                 </span>
               </div>
+
               <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
                 {limitedItems.map((item) => (
                   <div key={item.name} className="rounded-3xl border border-white/10 bg-neutral-900 p-6">
@@ -241,6 +253,7 @@ export default function Page() {
                   加點選擇
                 </span>
               </div>
+
               <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
                 {sideItems.map((item) => (
                   <div key={item.name} className="rounded-2xl border border-white/10 bg-neutral-900 px-5 py-4">
@@ -261,6 +274,7 @@ export default function Page() {
           <div className="rounded-[28px] border border-white/10 bg-white/[0.03] p-8">
             <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Location</p>
             <h2 className="mt-3 text-3xl font-bold">店家資訊</h2>
+
             <div className="mt-8 space-y-4 text-gray-300">
               <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
                 地址：台北市信義區永吉路30巷157弄12號
@@ -274,9 +288,12 @@ export default function Page() {
               <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
                 類型：台式厚切牛排館
               </div>
+              <div className="rounded-2xl border border-white/10 bg-black/20 px-5 py-4">
+                交通方式：鄰近捷運市政府站，步行可達
+              </div>
             </div>
 
-            <div className="mt-8">
+            <div className="mt-8 flex flex-wrap gap-4">
               <a
                 href="https://maps.app.goo.gl/cfE5yWkMuCs25Cpg7"
                 target="_blank"
@@ -286,11 +303,22 @@ export default function Page() {
                 開啟 Google 地圖
               </a>
             </div>
+
+            <div className="mt-8 overflow-hidden rounded-3xl border border-white/10">
+              <iframe
+                src="https://www.google.com/maps?q=台北市信義區永吉路30巷157弄12號&output=embed"
+                width="100%"
+                height="320"
+                style={{ border: 0 }}
+                loading="lazy"
+              />
+            </div>
           </div>
 
           <div className="rounded-[28px] border border-white/10 bg-gradient-to-br from-yellow-300/10 to-white/5 p-8">
             <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Reviews</p>
             <h2 className="mt-3 text-3xl font-bold">客人常見評價</h2>
+
             <div className="mt-8 space-y-5">
               {reviews.map((review) => (
                 <div key={review} className="rounded-2xl border border-white/10 bg-black/20 p-5">
@@ -302,8 +330,43 @@ export default function Page() {
           </div>
         </div>
       </section>
-      <footer className="border-t border-white/10 bg-neutral-950 px-6 py-8 text-center text-sm text-gray-500">
-        © 2026 新牛屋（牛一牛）厚切牛排・永吉店
+
+      <section className="border-t border-white/10 bg-black px-6 py-16">
+        <div className="mx-auto max-w-6xl rounded-[32px] border border-white/10 bg-[linear-gradient(135deg,rgba(250,204,21,0.12),rgba(255,255,255,0.03))] p-8 md:p-10">
+          <div className="grid gap-8 lg:grid-cols-[1fr_auto] lg:items-center">
+            <div>
+              <p className="text-sm uppercase tracking-[0.3em] text-yellow-300">Call to action</p>
+              <h2 className="mt-3 text-3xl font-bold md:text-4xl">準備好安排下一餐了嗎？</h2>
+              <p className="mt-4 max-w-2xl leading-8 text-gray-300">
+                不管是平日晚餐、朋友聚會，還是想找一間份量夠又不會太貴的排餐店，這裡都是很容易下決定的選擇。
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-3">
+              <a
+                href="https://maps.app.goo.gl/cfE5yWkMuCs25Cpg7"
+                target="_blank"
+                rel="noreferrer"
+                className="rounded-2xl bg-yellow-300 px-6 py-3 text-center font-semibold text-black"
+              >
+                立即導航
+              </a>
+              <a
+                href="tel:0227650821"
+                className="rounded-2xl border border-white/15 bg-white/5 px-6 py-3 text-center font-semibold text-white"
+              >
+                撥打電話
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer className="border-t border-white/10 bg-neutral-950 px-6 py-10 text-center text-sm text-gray-500">
+        <p className="text-gray-300">新牛屋（牛一牛）厚切牛排・永吉店</p>
+        <p className="mt-2">台北市信義區永吉路30巷157弄12號｜02 2765 0821</p>
+        <p className="mt-2">營業時間：11:00 – 21:00</p>
+        <p className="mt-3">© 2026 All Rights Reserved.</p>
       </footer>
     </main>
   )
